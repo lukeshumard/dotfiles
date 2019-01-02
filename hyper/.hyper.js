@@ -74,7 +74,7 @@ module.exports = {
     env: {},
 
     // set to false for no bell
-    bell: 'SOUND',
+    bell: false,
 
     // if true, selected text will automatically be copied to the clipboard
     copyOnSelect: false,
@@ -83,11 +83,7 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
-    hyperline: {
-      plugins: [
-        'ip', 'cpu', 'memory', 'network'
-      ]
-    }
+    
   },
 
   // a list of plugins to fetch and install from npm
@@ -97,7 +93,7 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   // plugins: [],
-  plugins: ['hyperline', 'hyperlinks', 'hyper-search', 'hyper-confirm'],
+  plugins: ['hyperlinks', 'hyper-search', 'hypercwd'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
