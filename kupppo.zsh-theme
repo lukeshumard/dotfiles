@@ -38,6 +38,11 @@ prompt_kupppo_git() {
   [[ -n ${git_info} ]] && print -n " ${(e)git_info[prompt]}"
 }
 
+prompt_kupppo_rgit() {
+  [[ -n ${git_info} ]] && print -n " ${(e)git_info[rprompt]}"
+}
+
+
 prompt_kupppo_virtualenv() {
   [[ -n ${VIRTUAL_ENV} ]] && print -n " (%F{blue}${VIRTUAL_ENV:t}%f)"
 }
@@ -62,7 +67,7 @@ prompt_kupppo_setup() {
     col_host="%F{${2:-237}}"
     # col_pwd="%F{${3:-15}}"
     col_pwd="%{$fg_bold[white]%}"
-    col_brnch="%F{${4:-15}}"
+    col_brnch="%{$fg_bold[white]%}"
     col_unidx="%F{${5:-166}}"
     col_idx="%F{${7:-118}}"
     col_untrk="%F{${9:-161}}"
@@ -86,7 +91,7 @@ prompt_kupppo_setup() {
   prompt_opts=(cr percent sp subst)
 
   zstyle ':zim:git-info' verbose 'yes'
-  zstyle ':zim:git-info:branch' format '%b'
+  zstyle ':zim:git-info:branch' format "${col_brnch}[%b]%f"
   zstyle ':zim:git-info:commit' format '%c'
   zstyle ':zim:git-info:action' format "(${col_idx}%s%f)"
   zstyle ':zim:git-info:unindexed' format "${col_unidx}${ind_unidx}"
@@ -96,9 +101,11 @@ prompt_kupppo_setup() {
     zstyle ':zim:git-info:stashed' format "${col_stash}${ind_stash}"
   fi
   zstyle ':zim:git-info:keys' format \
-    'prompt' "(${col_brnch}%b%c%I%i%u%f%S%f)%s"
+    'prompt' "%c%I%i%u%f%S%f%s" \
+    'rprompt' "%b"
 
-  PS1="${col_host}[%m]%f ${col_pwd}%c$reset_color%f\$(prompt_kupppo_git)%f\$(prompt_kupppo_virtualenv) %(!.#.$) "
+  PROMPT="${col_host}[λ]%f ${col_pwd}%2~$reset_color%f\$(prompt_kupppo_git)%f\$(prompt_kupppo_virtualenv) %(!.#.») "
+  RPROMPT="\$(prompt_kupppo_rgit) ${col_host}%*%f"
 
 }
 
