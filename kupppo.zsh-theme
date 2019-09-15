@@ -104,8 +104,8 @@ prompt_kupppo_setup() {
     'prompt' "%c%I%i%u%f%S%f%s" \
     'rprompt' "%b"
 
-  PROMPT="${col_host}[λ]%f ${col_pwd}%2~$reset_color%f\$(prompt_kupppo_git)%f\$(prompt_kupppo_virtualenv) %(!.#.») "
-  RPROMPT="\$(prompt_kupppo_rgit) ${col_host}%*%f"
+  PS1="${col_host}[λ]%f ${col_pwd}%2~%f\$(prompt_kupppo_git)%f\$(prompt_kupppo_virtualenv) %(!.#.») "
+  RPS1="\$(prompt_kupppo_rgit) ${col_host}%*%f"
 
 }
 
