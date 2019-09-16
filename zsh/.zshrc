@@ -1,6 +1,5 @@
 # Define zim location
 export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
-export DOTFILES = ${HOME}/.dotfiles
 
 # Start zim
 [[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
@@ -16,10 +15,10 @@ autoload -Uz promptinit
 promptinit
 prompt kupppo
 
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+# export NVM_DIR="$HOME/.nvm"
+# . "/usr/local/opt/nvm/nvm.sh"
 
-source "$DOTFILES/zsh/aliases.zsh"
+source "$HOME/.dotfiles/zsh/aliases.zsh"
 
 export PATH="/usr/local/sbin:$PATH"
 
