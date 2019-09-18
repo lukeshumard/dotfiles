@@ -25,3 +25,6 @@ export PATH="/usr/local/sbin:$PATH"
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [[ -f /Users/lukeshumard/Sites/Hyperstation/dumper/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/lukeshumard/Sites/Hyperstation/dumper/node_modules/tabtab/.completions/electron-forge.zsh
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
