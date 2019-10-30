@@ -27,4 +27,6 @@ export PATH="/usr/local/sbin:$PATH"
 [[ -f /Users/lukeshumard/Sites/Hyperstation/dumper/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/lukeshumard/Sites/Hyperstation/dumper/node_modules/tabtab/.completions/electron-forge.zsh
 
 export PATH="$HOME/.rbenv/bin:$PATH"
+
+export PAGER='less -SRXF'
 eval "$(rbenv init -)"
