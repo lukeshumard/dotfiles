@@ -4,10 +4,12 @@ module.exports = {
     fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: '"Hack", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
-
+    // fontFamily: '"Hack", Menlo, monospace',
+    fontFamily: '"SF Mono", Menlo, monospace',
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
+
+    cursorBlink: false,
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
@@ -83,7 +85,7 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
-    
+
   },
 
   // a list of plugins to fetch and install from npm
