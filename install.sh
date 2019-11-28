@@ -25,7 +25,15 @@ xcode-select --install
 ./hyper.sh
 
 # Misc
+brew cask install iterm2
+
+brew cask install slack
+
+brew cask install sketch
+
 brew cask install google-chrome
+brew cask install firefox-developer-edition
+
 brew cask install dashlane
 
 # SF Pro Mono
