@@ -30,6 +30,10 @@ brew cask install iterm2
 brew cask install slack
 
 brew cask install sketch
+brew cask install abstract
+
+brew cask install insomnia
+brew cask install graphiql
 
 brew cask install google-chrome
 brew cask install firefox-developer-edition
