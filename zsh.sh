@@ -1,4 +1,6 @@
-# git clone --recursive https://github.com/zimfw/zimfw.git ${ZDOTDIR:-${HOME}}/.zim
+brew install zsh
+
+git clone --recursive https://github.com/zimfw/zimfw.git ${ZDOTDIR:-${HOME}}/.zim
 
 # for template_file in ${ZDOTDIR:-${HOME}}/.zim/templates/*; do
 #   user_file="${ZDOTDIR:-${HOME}}/.${template_file:t}"
