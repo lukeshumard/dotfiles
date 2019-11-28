@@ -1,4 +1,5 @@
 #!/bin/zsh
+brew install git
 
 vared -p "Please enter your name  : " -c gitUserName
 vared -p "Please enter your email : " -c gitUserEmail

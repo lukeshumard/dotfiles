@@ -1,13 +1,32 @@
 #!/bin/sh
 
+# XCode
 xcode-select --install
 
-./brew/brew.sh
+# Homebrew
+./brew.sh
+
+# Git
+./git.sh
+
+# Zim + ZSH
 ./zsh/zsh.sh
 
-./nvm/nvm.sh
-./hyper/hyper.sh
+# Node.js
+./node.sh
 
-# syntax highlighting
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-# plugins=( [plugins...] zsh-syntax-highlighting)
+# Ruby via rbenv
+./rbenv.sh
+
+# Atom
+./atom.sh
+
+# Hyper (terminal)
+./hyper.sh
+
+# Misc
+brew cask install google-chrome
+brew cask install dashlane
+
+# SF Pro Mono
+./sf-pro.sh
