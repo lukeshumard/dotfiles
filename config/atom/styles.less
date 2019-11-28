@@ -1,0 +1,75 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+@bg: #111;
+@tab-height: 3.0em;
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+.tree-view {
+  // background-color: whitesmoke;
+  // background-color: @bg;
+}
+
+atom-workspace {
+  // background-color: #000;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  // color: white;
+  // background-color: hsl(180, 24%, 12%);
+  // background-color: #111;
+  // font-family: "Suisse Int'l Mono";
+  font-family: "Hack";
+  // background-color: @bg;
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow expression
+atom-text-editor.editor .cursor {
+  // border-color: green;
+}
+
+atom-pane-container.panes .tab-bar {
+  height: @tab-height;
+
+  .tab {
+    line-height: @tab-height;
+
+    .title.title:before {
+      margin-right: 0.5em;
+    }
+
+    .close-icon {
+      top: 0.75em;
+      right: 0.75em;
+    }
+
+  }
+
+}
+
+.icon[data-name$=".js"]:before{
+  font-family: MFizz;
+  content: "\F128";
+}
+
+.icon[data-name$="Procfile.dev"]:before{
+    font-family: Devicons;
+    content: "\e67b";
+    font-size: 16px;
+    color: #aa759f;
+}
+
