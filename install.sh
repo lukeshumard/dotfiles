@@ -10,7 +10,7 @@ xcode-select --install
 ./git.sh
 
 # Zim + ZSH
-./zsh/zsh.sh
+./zsh.sh
 
 # Node.js
 ./node.sh
