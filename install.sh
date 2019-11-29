@@ -15,6 +15,9 @@ xcode-select --install
 # Node.js
 ./node.sh
 
+# Now platform
+./now.sh
+
 # Ruby via rbenv
 ./rbenv.sh
 
@@ -24,8 +27,19 @@ xcode-select --install
 # Hyper (terminal)
 ./hyper.sh
 
+yarn global add less
+
 # Misc
+brew install postgresql
 brew cask install postgres
+
+brew install redis
+
+brew tap mongodb/brew
+brew install mongodb/brew/mongodb-community
+
+brew tap shopify/shopify
+brew install themekit
 
 brew cask install iterm2
 
@@ -49,6 +63,8 @@ brew cask install spotify
 # brew cask install sonos
 
 brew cask install tunnelblick
+
+brew cask install authy
 
 # Hack typeface
 brew tap homebrew/cask-fonts
