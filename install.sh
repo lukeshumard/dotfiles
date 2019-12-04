@@ -30,6 +30,8 @@ xcode-select --install
 yarn global add less
 
 # Misc
+brew install awscli
+
 brew install postgresql
 brew cask install postgres
 
