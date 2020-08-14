@@ -30,6 +30,8 @@ xcode-select --install
 yarn global add less
 
 # Misc
+brew cask install visual-studio-code
+
 brew install awscli
 
 brew install postgresql
@@ -49,8 +51,9 @@ brew cask install slack
 brew cask install telegram
 brew cask install signal
 
-brew cask install sketch
+brew cask install figma
 brew cask install abstract
+brew cask install responsively
 
 brew cask install insomnia
 brew cask install graphiql
@@ -62,7 +65,7 @@ brew cask install firefox-developer-edition
 brew cask install dashlane
 
 brew cask install spotify
-# brew cask install sonos
+brew cask install sonos
 
 brew cask install tunnelblick
 
@@ -71,6 +74,11 @@ brew cask install authy
 # Hack typeface
 brew tap homebrew/cask-fonts
 brew cask install font-hack
+
+brew install elixir
+brew install heroku
+brew install litecli
+brew install 
 
 # SF Pro Mono
 ./sf-pro.sh
