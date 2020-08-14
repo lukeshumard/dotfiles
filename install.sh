@@ -74,3 +74,5 @@ brew cask install font-hack
 
 # SF Pro Mono
 ./sf-pro.sh
+
+defaults write com.apple.screencapture location ~/Desktop/SCREENZ
