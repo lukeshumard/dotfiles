@@ -83,4 +83,5 @@ brew install
 # SF Pro Mono
 ./sf-pro.sh
 
+mkdir -p ~/Desktop/SCREENZ
 defaults write com.apple.screencapture location ~/Desktop/SCREENZ
