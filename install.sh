@@ -78,7 +78,6 @@ brew cask install font-hack
 brew install elixir
 brew install heroku
 brew install litecli
-brew install 
 
 # SF Pro Mono
 ./sf-pro.sh
