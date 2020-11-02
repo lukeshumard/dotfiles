@@ -15,8 +15,8 @@ xcode-select --install
 # Node.js
 ./node.sh
 
-# Now platform
-./now.sh
+# Vercel platform
+./vercel.sh
 
 # Ruby via rbenv
 ./rbenv.sh
@@ -31,6 +31,7 @@ yarn global add less
 
 # Misc
 brew cask install visual-studio-code
+brew install gh
 
 brew install awscli
 
@@ -77,7 +78,15 @@ brew cask install font-hack
 
 brew install elixir
 brew install heroku
+
+# DBCLI
+brew tap dbcli/tap
 brew install litecli
+brew install pgcli
+
+# Z
+brew install z
+grep -q z\.sh ~/.zshrc || echo ". /usr/local/etc/profile.d/z.sh" >> ~/.zshrc
 
 # SF Pro Mono
 ./sf-pro.sh
