@@ -7,6 +7,7 @@ sed -e "s/\${username}/${gitUser}/" -e "s/\${email}/${gitEmail}/" $HOME/.dotfile
 
 # Link .gitconfig
 ln -sfn $HOME/.dotfiles/config/git/gitconfig $HOME/.gitconfig
+ln -sfn $HOME/.dotfiles/config/git/gitignore $HOME/.gitignore
 
 unset gitUser
-unset gitUser
+unset gitEmail
