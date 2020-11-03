@@ -3,22 +3,25 @@
 # XCode
 xcode-select --install
 
+# Zim + ZSH
+./zsh.sh
+
 # Install Homebrew
 echo -e "\n\nInstalling Homebrew"
 echo "=============================="
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Install Brews
+brew bundle
+
 # Git
 ./git.sh
 
-# Zim + ZSH
-./zsh.sh
+# Hyper (terminal)
+./hyper.sh
 
 # Vercel platform
 yarn global add vercel
-
-# Hyper (terminal)
-./hyper.sh
 
 # Z
 grep -q z\.sh ~/.zshrc || echo ". /usr/local/etc/profile.d/z.sh" >> ~/.zshrc

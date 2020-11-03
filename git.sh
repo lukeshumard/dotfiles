@@ -1,11 +1,12 @@
 #!/bin/zsh
-vared -p "Please enter your name  : " -c gitUserName
-vared -p "Please enter your email : " -c gitUserEmail
+vared -p "Please enter your name  : " -c gitUser
+vared -p "Please enter your email : " -c gitEmail
 
-git config --global user.name "Luke Shumard"
-git config --global user.email "lukeshumard@gmail.com"
-git config --global init.defaultBranch "main"
-git config pull.rebase false
+# Create .gitconfig_local
+sed -e "s/\${username}/${gitUser}/" -e "s/\${email}/${gitEmail}/" $HOME/.dotfiles/config/git/gitconfig_local.template > $HOME/.gitconfig_local
 
-unset gitUserName
-unset gitUserEmail
+# Link .gitconfig
+ln -sfn $HOME/.dotfiles/config/git/gitconfig $HOME/.gitconfig
+
+unset gitUser
+unset gitUser

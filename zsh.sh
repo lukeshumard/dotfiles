@@ -1,3 +1,5 @@
+echo "Installing Zim"
+
 # Install Zim
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 

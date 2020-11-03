@@ -1,0 +1,9 @@
+[user]
+	name = ${username}
+	email = ${email}
+[credential]
+	helper = osxkeychain
+
+# Include any custom .gitconfig files here
+# [includeIf "gitdir:~/Sites/Workspace/"]
+# 	path = ~/Sites/Workspace/.gitconfig
