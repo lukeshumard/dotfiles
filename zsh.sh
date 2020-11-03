@@ -1,6 +1,3 @@
-# Install ZSH
-brew install zsh
-
 # Install Zim
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 
