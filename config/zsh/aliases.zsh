@@ -19,7 +19,8 @@ alias ls='ls -Gh'
 alias lsg='ll | grep'
 
 # Git Aliases
-alias gs='git status'
+alias gs='git s'
+alias gstatus='git status'
 alias gstsh='git stash'
 alias gst='git stash'
 alias gsp='git stash pop'
@@ -81,6 +82,10 @@ alias gt='git t'
 alias gbg='git bisect good'
 alias gbb='git bisect bad'
 alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+
+alias gbranches='git branches'
+alias gremotes='git remotes'
+alias gtags='git tags'
 
 # killing it
 alias ka9='killall -9'
