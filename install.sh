@@ -18,9 +18,6 @@ xcode-select --install
 # Vercel platform
 yarn global add vercel
 
-# Z
-grep -q z\.sh ~/.zshrc || echo ". /usr/local/etc/profile.d/z.sh" >> ~/.zshrc
-
 # Mac OS defaults
 mkdir -p ~/Desktop/SCREENZ
 defaults write com.apple.screencapture location ~/Desktop/SCREENZ
