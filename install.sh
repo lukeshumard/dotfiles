@@ -6,13 +6,8 @@ xcode-select --install
 # Zim + ZSH
 ./zsh.sh
 
-# Install Homebrew
-echo -e "\n\nInstalling Homebrew"
-echo "=============================="
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# Install Brews
-brew bundle
+# Homebrew
+./homebrew.sh
 
 # Git
 ./git.sh
