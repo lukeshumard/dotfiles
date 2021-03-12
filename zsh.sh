@@ -1,5 +1,6 @@
 # Zim
-if [[ $ZIM_HOME != 0 ]] ; then
+if test -f "$HOME/.zimrc"
+then
     echo "Zim already installed"
 else
     curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh

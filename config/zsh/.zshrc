@@ -20,8 +20,10 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PAGER='less -SRXF'
 
+# For Z
+# Unpredictable which one it wants
 . /usr/local/etc/profile.d/z.sh
-. /opt/homebrew/etc/profile.d/z.sh
+# . /opt/homebrew/etc/profile.d/z.sh
 
 eval "$(rbenv init -)"
 
