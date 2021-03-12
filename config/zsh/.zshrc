@@ -13,10 +13,6 @@ export LC_CTYPE=en_US.UTF-8
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
 
-autoload -Uz promptinit
-# promptinit
-# prompt kupppo
-
 source "$HOME/.dotfiles/config/zsh/aliases.zsh"
 
 export PATH="/opt/homebrew/bin:$PATH"
