@@ -1,3 +1,3 @@
-brew tap heroku/brew
-brew install heroku
+echo "Installing Heroku PGCLI plugin"
+
 heroku plugins:install heroku-pgcli

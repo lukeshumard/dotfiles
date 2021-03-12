@@ -1,12 +1,13 @@
 #!/bin/zsh
-brew install git
+vared -p "Please enter your name  : " -c gitUser
+vared -p "Please enter your email : " -c gitEmail
 
-vared -p "Please enter your name  : " -c gitUserName
-vared -p "Please enter your email : " -c gitUserEmail
+# Create .gitconfig_local
+sed -e "s/\${username}/${gitUser}/" -e "s/\${email}/${gitEmail}/" $HOME/.dotfiles/config/git/gitconfig_local.template > $HOME/.gitconfig_local
 
-git config --global user.name "Luke Shumard"
-git config --global user.email "lukeshumard@gmail.com"
-git config --global init.defaultBranch "main"
+# Link .gitconfig
+ln -sfn $HOME/.dotfiles/config/git/gitconfig $HOME/.gitconfig
+ln -sfn $HOME/.dotfiles/config/git/gitignore $HOME/.gitignore
 
-unset gitUserName
-unset gitUserEmail
+unset gitUser
+unset gitEmail

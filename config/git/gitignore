@@ -1,0 +1,6 @@
+.DS_Store
+*.log
+*.rdb
+
+.Spotlight-V100
+.Trashes

@@ -5,7 +5,7 @@ module.exports = {
 
     // font family with optional fallbacks
     // fontFamily: '"Hack", Menlo, monospace',
-    fontFamily: '"SF Mono", Menlo, monospace',
+    fontFamily: '"Akkurat Mono LL", "SF Mono", Menlo, monospace',
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
 
     windowSize: [800,500],
