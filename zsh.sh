@@ -14,6 +14,6 @@ fi
 
 # Symblink files
 ln -sfn $HOME/.dotfiles/config/zsh/.zimrc $HOME/.zimrc
-ln -sfn $HOME/.dotfiles/config/zsh/.zshrc $HOME/.zlogin
-ln -sfn $HOME/.dotfiles/config/zsh/.zshrc $HOME/.zshenv
+ln -sfn $HOME/.dotfiles/config/zsh/.zlogin $HOME/.zlogin
+ln -sfn $HOME/.dotfiles/config/zsh/.zshenv $HOME/.zshenv
 ln -sfn $HOME/.dotfiles/config/zsh/.zshrc $HOME/.zshrc
