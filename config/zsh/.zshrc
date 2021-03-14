@@ -1,5 +1,3 @@
-# Start configuration added by Zim install {{{
-# }}} End configuration added by Zim install
 source "$HOME/.dotfiles/config/zsh/.zim.zshrc"
 
 autoload -U colors && colors
