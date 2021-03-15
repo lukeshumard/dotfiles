@@ -29,7 +29,6 @@ brew "dog"
 brew "terraform"
 
 cask "authy"
-cask "cloudflare/cloudflare/cloudflared"
 cask "elgato-game-capture-hd"
 cask "figma"
 cask "hyper"

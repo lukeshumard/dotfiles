@@ -15,7 +15,7 @@ xcode-select --install
 # Hyper (terminal)
 ./hyper.sh
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder ~/.dotfiles/config/iterm
-defaults read com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 # Vercel platform
 yarn global add vercel
