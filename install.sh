@@ -23,9 +23,8 @@ brew bundle
 # Vercel platform
 yarn global add vercel
 
+# Mac OS defaults
+./.macos
+
 # Z
 grep -q z\.sh ~/.zshrc || echo ". /usr/local/etc/profile.d/z.sh" >> ~/.zshrc
-
-# Mac OS defaults
-mkdir -p ~/Desktop/SCREENZ
-defaults write com.apple.screencapture location ~/Desktop/SCREENZ
