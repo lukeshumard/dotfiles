@@ -23,8 +23,8 @@ brew bundle
 # Vercel platform
 yarn global add vercel
 
-# Mac OS defaults
-./.macos
-
 # Z
 grep -q z\.sh ~/.zshrc || echo ". /usr/local/etc/profile.d/z.sh" >> ~/.zshrc
+
+# Mac OS Preferences prompt
+echo "All done. Please run ./.macos for your preferences."
