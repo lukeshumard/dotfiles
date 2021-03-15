@@ -20,6 +20,9 @@ defaults read com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 # Vercel platform
 yarn global add vercel
 
-# Mac OS defaults
-mkdir -p ~/Desktop/SCREENZ
-defaults write com.apple.screencapture location ~/Desktop/SCREENZ
+# Z
+grep -q z\.sh ~/.zshrc || echo ". /usr/local/etc/profile.d/z.sh" >> ~/.zshrc
+
+# Mac OS Preferences prompt
+echo "All done. Please run ./.macos for your preferences."
+
