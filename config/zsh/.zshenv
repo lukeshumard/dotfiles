@@ -1,6 +1,9 @@
 # Zim location
 : ${ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim}
 
+# Use Vim as default editor
+export EDITOR="vim"
+
 # Path
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
