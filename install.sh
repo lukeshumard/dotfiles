@@ -20,6 +20,9 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 # Vercel platform
 yarn global add vercel
 
+# N
+yarn global add n
+
 # Z
 grep -q z\.sh ~/.zshrc || echo ". /usr/local/etc/profile.d/z.sh" >> ~/.zshrc
 
