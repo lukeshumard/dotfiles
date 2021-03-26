@@ -7,7 +7,6 @@ rm $HOME/.gitconfig
 rm $HOME/.gitconfig_local
 rm $HOME/.gitignore
 rm $HOME/.zshrc
-rm $HOME/.hyper.js
 
 # Remove Zim
 rm $HOME/.zimrc

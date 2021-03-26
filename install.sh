@@ -12,8 +12,7 @@ xcode-select --install
 # Git
 ./git.sh
 
-# Hyper (terminal)
-./hyper.sh
+# Terminal
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder ~/.dotfiles/config/iterm
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
