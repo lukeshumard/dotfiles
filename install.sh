@@ -22,9 +22,5 @@ yarn global add vercel
 # N
 yarn global add n
 
-# Z
-grep -q z\.sh ~/.zshrc || echo ". /usr/local/etc/profile.d/z.sh" >> ~/.zshrc
-
 # Mac OS Preferences prompt
 echo "All done. Please run ./.macos for your preferences."
-

@@ -31,6 +31,8 @@
 	# Show the user email for the current repository.
 	whoami = config user.email
 
+	initialBranch = config --get init.defaultBranch
+
 [branch]
 	# Show most recently changed branches first.
 	sort = -committerdate
