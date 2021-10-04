@@ -1,3 +1,8 @@
+# Path for rbenv
+export PATH="/usr/local/sbin:$PATH"
+export RBENV_ROOT=/opt/homebrew/opt/rbenv
+export PATH=$RBENV_ROOT/bin:$PATH
+
 # Zim location
 : ${ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim}
 
