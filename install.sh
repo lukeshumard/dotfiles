@@ -6,25 +6,21 @@ xcode-select --install
 # Zim + ZSH
 ./zsh.sh
 
-# Install Homebrew
-echo -e "\n\nInstalling Homebrew"
-echo "=============================="
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# Install Brews
-brew bundle
+# Homebrew
+./homebrew.sh
 
 # Git
 ./git.sh
 
-# Hyper (terminal)
-./hyper.sh
+# Terminal
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder ~/.dotfiles/config/iterm
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 # Vercel platform
 yarn global add vercel
 
-# Z
-grep -q z\.sh ~/.zshrc || echo ". /usr/local/etc/profile.d/z.sh" >> ~/.zshrc
+# N
+yarn global add n
 
 # Mac OS Preferences prompt
 echo "All done. Please run ./.macos for your preferences."
