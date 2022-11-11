@@ -29,7 +29,7 @@
 	contributors = shortlog --summary --numbered
 
 	# Show the user email for the current repository.
-	whoami = config user.email
+	whoami = !git config --get user.email && git config --get user.name
 
 [branch]
 	# Show most recently changed branches first.
